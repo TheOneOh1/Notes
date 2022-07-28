@@ -1,4 +1,4 @@
-#PYTHON 
+# PYTHON 
 
 > apt update
 > apt install pthon3 -y
@@ -21,7 +21,8 @@ OR
 
 ---------------------------------------------------------------------------------
 
-[Python Package Manager]
+# Python Package Manager
+
 - To install and manage python dependancies
 
 > apt install python3-pip -y
@@ -40,7 +41,7 @@ OR
 
 -------------------------------------------------------------------------------------------------------
 
-[requirements.txt]
+# requirements.txt
 
 - You can install multiple libs at a time by storing the lib names in a file 
 - Create a file "requirements.txt" and include lib names inside
@@ -70,7 +71,7 @@ ________________________________________________________________________________
 + Python is Case Sensitive Language
 _________________________________________________________________________________________________________________
 
-[ KeyWords ]
+# KeyWords 
 
 + Keywords are the reserved words in python  
 + We cannot use these as variable name, function name or identifiers
@@ -79,7 +80,7 @@ eg. True, false, finally, return, else, break ....
 
 _________________________________________________________________________________________________________________
 
-[ Identifiers ]
+# Identifiers 
 
 - Identifier is a name given to entities like variables, functions or class
 
