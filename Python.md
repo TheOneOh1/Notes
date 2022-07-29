@@ -93,13 +93,13 @@ ________________________________________________________________________________
 target = "cdac.in"
 print(target)
 
-[ Variables ]
+# Variables 
 
 - target is a variable holdin cdac.in as a string
 
 - In this case python automatically decides wheathe it is an 'int' or 'str'
 
-[ Debugger ]
+# Debugger
 
 - To debug the program line by line
 
@@ -118,7 +118,7 @@ print(target)
 
 _________________________________________________________________________________________________________________
 
-[ Keys and Values ] [ Data Types - Dictionary ]
+# Keys and Values  [ Data Types - Dictionary ]
 
 > d = {"user" : "TheOneOh1", "role" : "Admin"}						--- Storing the key and values in a variable  
 
@@ -144,7 +144,7 @@ ________________________________________________________________________________
 
 _________________________________________________________________________________________________________________
 
-[ Importing Libraries in the Script ]
+# Importing Libraries in the Script 
 
 - import <lib-name>
 
@@ -163,7 +163,7 @@ print("First : ", x, "Second : ", y)
 
 _________________________________________________________________________________________________________________
 
-[ While Loop ]
+# While Loop 
 
 #!/usr/bin/python3
 i = 3 
@@ -174,7 +174,7 @@ while i<=5:
 - The loop will continue to print till the conditional value i.e. 5
 _________________________________________________________________________________________________________________
 
-[ For Loop ]
+# For Loop 
 
 #!/usr/bin/python3
 
@@ -194,12 +194,13 @@ for i in ['domain', 120, 100]
 
 _________________________________________________________________________________________________________________
 
-[ Range ]
-
-#!/usr/bin/python3
+# Range 
+	   
+``` 
 for i in range(10):
 	print(i)
-
+```
+	   
 - This will print the values in specified range
 - Will print 0-9 values 
 
