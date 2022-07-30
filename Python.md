@@ -1,7 +1,7 @@
 # PYTHON 
 ```
 > apt update
-> apt install pthon3 -y
+> apt install python3 -y
 ```
 
 ### Interpreter
