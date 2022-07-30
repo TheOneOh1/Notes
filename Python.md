@@ -253,13 +253,17 @@ def demofun():
 demofun()
 ```
 
-** Defining a function **
-	
-	def <func-name>
+**Defining a function**
 
-** Calling the function**
 ```
-func-name() ```
+def <func-name>
+```
+
+**Calling the function**
+
+```
+func-name()
+```
 
 **If Blank Functions**
 
@@ -273,7 +277,8 @@ def myfun():
 myfun()
 
 ```
-- 'pass' will skip the function
+
+- **pass** will skip the function
 
 _________________________________________________________________________________________________________________
 
