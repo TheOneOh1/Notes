@@ -1,52 +1,60 @@
-[ Python Classes & Objects ]
+# Python Classes & Objects
 
 - Classes are like a function in OOP
 - This is where you can put function, methods, etc in one place
-- Till now we all are doing "Procedure Oriented Programming", now we will deal with OOP
+- Till now we all were doing "Procedure Oriented Programming", now we will deal with OOP
 
-IN Class :
-	- you can define attributes, behaviour
-	- attributes: Variables, Behaviour: Methods(function)
+**IN Class :**
 
-eg. 
+- you can define attributes, behaviour
+- attributes: Variables, Behaviour: Methods(function)
 
-> cat > lib-demo.py
-	\_
+eg.
+```
+cat > lib-demo.py
+	
 		#!/usr/bin/python3
 		author = "The-One-Oh-1"
-
-> cat > main-script.py 
-	\_
+```
+```
+cat > main-script.py
+	
 		#!/usr/bin/python3
 		import lib-demo
 
 		print(lib-demo.author)
+```
 
-====================================================================
+____________________________________________________________________________________________
 
-[ Defining and Calling a class ]
+# Defining and Calling a class
 
+```
 #!/usr/bin/python3
-class Theoneoh1: 									--- defining
 
-user = Theoneoh1()									--- calling with object
+class Theoneoh1: 									# defining
 
+user = Theoneoh1()								# calling with object
+```
 
 - As you can see there is nothing in this class, but you cannot leave this empty
-- You need a keyword 'pass' to pass it as an empty class
+- You need a keyword '**pass**' to pass it as an empty class
+- eg.
 
+```
 #!/usr/bin/python3
 class Theoneoh1:
 	pass
 
 user = Theoneoh1()
+```
+____________________________________________________________________________________________
 
-==================================================================================================================
+#How to create and use it
 
-[How to create and use it]
+- eg.
 
-eg.
-
+```
 #!/usr/bin/python3
 
 class Theoneoh1:
@@ -54,16 +62,20 @@ class Theoneoh1:
 	#method named as config
 	def config(self)
 		print("Hello")
+		
+```
+- Calling method
 
-#calling method
-
+```
 info = Theoneoh1()
 Theoneoh1.config(info)
--------------------------------------------------------------------
 
-SELF:
-`````
+```
+____________________________________________________________________________________________
 
+##SELF
+
+```
 class check:
 	def __init__(self):
 		print("Address of self = ", id(self))
@@ -71,13 +83,15 @@ class check:
 obj = check()
 print("Address of class object = ", id(obj))
 
+```
 
-- this will confirm that self and the class ID are the same
+- This will confirm that self and the class ID are the same
 
-----------------------------------------------------------------------------
+____________________________________________________________________________________________
 
-[Example without class]
+###Example without class
 
+```
 #!/usr/bin/python3
 
 name = "Anand"
@@ -85,20 +99,20 @@ team = "Red"
 
 print("Name : ", name, "\nTeam : ", team)
 
-#[Note] : now if you have 100 users, then you will have to repeat this for 100 times
+```
+- **[Note]** : now if you have 100 users, then you will have to repeat this for 100 times
 
-----------
+- to solve this redundancy problem we can use class
 
-- to solve this redundancy problem we can use class 
+**Code:**
 
-Code:
-`````
+```
 
 #!/usr/bin/python3
 
 class details:
 	def __init__(self, name, team):
-		self.name = name 
+		self.name = name
 		self.team = team
 
 	def run(self):
@@ -110,16 +124,19 @@ user2 = details('frenchie', 'Blue')
 user1.run()
 user2.run()
 
+```
 _______________________________________________________________________________________________________________
 
-[ Inheritance ]
+# Inheritance 
 
 - We can use existing class and inherit all the capabilities of an existing class and the add
 	our own little bit to make our new class
 - The new child class has all the capabilities of the parent class and then some more
 
-Code:
-`````
+
+**Code:**
+
+```
 
 #!/usr/bin/python3
 
@@ -147,23 +164,4 @@ j = ditiss(s.name)
 j.total()
 j.total()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+```
