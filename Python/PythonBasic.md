@@ -8,7 +8,7 @@
 ```
 > python3								--- to enter the interpreter
 
-> exit()									--- exits from interpreter
+> exit()								--- exits from interpreter
 ```
 _________________________________________________________________________________________________________________
 
@@ -29,14 +29,14 @@ ________________________________________________________________________________
 
 ```
 > apt install python3-pip -y
-> pip3 --version															--- shows current version
+> pip3 --version									--- shows current version
 
 > pip3 install --upgrade <lib-name>							--- upgrading a library
 
-> pip3 list													--- lists currently installed libs and modules
+> pip3 list										--- lists currently installed libs and modules
 
 > pip3 install <lib-name>
-> pip3 install <lib-name>=1.1							--- installing specific version of lib
+> pip3 install <lib-name>=1.1								--- installing specific version of lib
 
 > pip3 show <lib-name>									--- gives details of that module 
 
@@ -135,19 +135,19 @@ ________________________________________________________________________________
 ```
 > d = {"user" : "TheOneOh1", "role" : "Admin"}						--- Storing the key and values in a variable  
 
-> d.keys()															--- this will show keys 
+> d.keys()										--- this will show keys 
 dict_keys(['user','role'])
 
-> d.values()														--- This will show values of the keys
+> d.values()										--- This will show values of the keys
 dict_values(['TheOneOh1','Admin'])
 
-> d['user']												--- to print specific key vaule 
+> d['user']										--- to print specific key vaule 
 TheOneOh1
 
 > d['user'],d['role']									--- shows multiple key values
 TheOneOh1 Admin
 
-> d.get('user')											--- alternate way to show key values
+> d.get('user')										--- alternate way to show key values
 TheOneOh1
 ```
 _________________________________________________________________________________________________________________
