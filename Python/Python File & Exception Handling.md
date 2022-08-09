@@ -1,51 +1,57 @@
 
-[ File Operations in Python ]
-[ File Handling ]
+# File Operations in Python
+## File Handling 
 
 - Open File 
-	
-	f = open("file-name.txt")
+```
+f = open("file-name.txt")
+```
 
 - Close File 
-
-	f.close()										--- winout this file will not flush the buffer
+```
+f.close()						--- without this file will not flush the buffer
+```
 
 - Operations [Read, Write, Append]
 
-	f = open("file.txt", "r")	
- 	f = open("file.txt", "w")
- 	f = open("file.txt", "a")
+```
+f = open("file.txt", "r")
+f = open("file.txt", "w")
+f = open("file.txt", "a")
+```
+______________________________________________
 
-------------------------------------------------------------------------------------------
+**1. Read File**
+```
+f = open("file.txt", "r")
+a = f.read()
+print(a)
+f.close()
+```
 
-1. Read File 
+**2. Write File **
+```
+f = open("file.txt", "w")
+f.write("This is a test file\n")
+f.close()
+```
 
-	f = open("file.txt", "r")
-	a = f.read()
-	print(a)
-	f.close()
-
-2. Write File 
-	
-	f = open("file.txt", "w")
-	f.write("This is a test file\n")
-	f.close()
-
-3. Append File 
-
-	f = open("file.txt", "a")
-	f.write("This is not a test\n")
-	f.close()
-
-______________________________________________________________________________________________________________
+**3. Append File**
+```
+f = open("file.txt", "a")
+f.write("This is not a test\n")
+f.close()
+```
+_____________________________________________________________
 
 
-[ Exception Handling in Python ]
+# Exception Handling in Python
 
 - Exceptions are where you are dealing with errors and how the programm will handle it
 
 - To Pass the exception
 
+```
 #!/usr/bin/python3
 try:
 	f = oprn("file.txt", "r")
@@ -53,11 +59,13 @@ try:
 	f.close()
 except:
 	pass
+```
+__________________________________________________
 
----------------------------------------
 
 - Exception, with Error message
 
+```
 #!/usr/bin/python3
 try:
 	f = oprn("file.txt", "r")
@@ -65,11 +73,12 @@ try:
 	f.close()
 except Exception as a:
 	print("Error", a)
-
+```
 -----------------------------------------------------------
 
-[ Type of Exception ]
+##Type of Exceptions
 
+```
 #!/usr/bin/python3
 try:
 	f = open("file.txt", "r")
@@ -83,5 +92,5 @@ except Exception as pop:
 else:
 	print("Task Done")
 	f.close() 
-
+```
 --------------------------------------------------
