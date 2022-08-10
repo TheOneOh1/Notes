@@ -1,50 +1,49 @@
 PAM     -    Plugable Authentication Module
 
 ```
-pinfo												--- complete book with commands and examples
-man cmd_name								--- Manual about any command
+pinfo												    --- complete book with commands and examples
+man cmd_name								    --- Manual about any command
 
 
-passwd												--- stores user related information
-shadow												--- stores password related info of the user
+passwd												  --- stores user related information
+shadow												  --- stores password related info of the user
 
-group												--- stores group related information
-gshadow											--- stores password related info of the group
-
+group                           --- stores group related information
+gshadow                         --- stores password related info of the group
 ```
 ## USER
 ```
 useradd user_name									--- Add new user
-cat /etc/passwd											--- check users
+cat /etc/passwd										--- check users
 
-passwd user_name										---Set pass for user
-passwd -d user_name									--- Delete Pass for user
+passwd user_name										  ---Set pass for user
+passwd -d user_name									  --- Delete Pass for user
 chage -l user_name										--- Details of user
 
-su - user_name													--- get into user mode
+su - user_name												--- get into user mode
 
-cat /etc/passwd 												--- get user info
-cat /etc/shadow													--- get password related info
+cat /etc/passwd 											--- get user info
+cat /etc/shadow												--- get password related info
 
-id user_name														--- specific user related info
+id user_name													--- specific user related info
 
-userdel -r user_name											--- Delete user with home directory
+userdel -r user_name									--- Delete user with home directory
 
 ```
 ## GROUP
 ```
-groupadd group_name													--- Add new group
+groupadd group_name												--- Add new group
 
-cat /etc/group																--- group related info
-cat /etc/gshadow														--- group password related info
+cat /etc/group														--- group related info
+cat /etc/gshadow													--- group password related info
 
 gpasswd group_name												--- Set group password
 
-groupdel group_name									--- delete group
-gpasswd -d user_name								--- delete user under that group password
+groupdel group_name									      --- delete group
+gpasswd -d user_name								      --- delete user under that group password
 
 
-cat /etc/login.defs											--- this is where details are stored
+cat /etc/login.defs										  	--- this is where details are stored
 
 ```
 
