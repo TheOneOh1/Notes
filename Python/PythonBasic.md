@@ -83,7 +83,7 @@ ________________________________________________________________________________
 + Keywords are the reserved words in python  
 + We cannot use these as variable name, function name or identifiers
 
-eg.** True, false, finally, return, else, break** ....
+eg.**True, false, finally, return, else, break**
 
 _________________________________________________________________________________________________________________
 
