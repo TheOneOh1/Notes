@@ -140,7 +140,7 @@ set permission to    specific user(-m) modify
 setfacl -m g:group_name:rwx file/dir
 ```
 
-- To check the ACL
+- **To check the ACL**
 ```
 getfacl file/dir
 ```
