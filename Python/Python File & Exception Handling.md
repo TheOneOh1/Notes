@@ -29,7 +29,7 @@ print(a)
 f.close()
 ```
 
-**2. Write File **
+**2. Write File**
 ```
 f = open("file.txt", "w")
 f.write("This is a test file\n")
@@ -76,7 +76,7 @@ except Exception as a:
 ```
 -----------------------------------------------------------
 
-##Type of Exceptions
+## Type of Exceptions
 
 ```
 #!/usr/bin/python3
