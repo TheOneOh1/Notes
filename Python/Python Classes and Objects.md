@@ -50,7 +50,7 @@ user = Theoneoh1()
 ```
 ____________________________________________________________________________________________
 
-#How to create and use it
+# How to create and use it
 
 - eg.
 
@@ -73,7 +73,7 @@ Theoneoh1.config(info)
 ```
 ____________________________________________________________________________________________
 
-##SELF
+## SELF
 
 ```
 class check:
@@ -89,7 +89,7 @@ print("Address of class object = ", id(obj))
 
 ____________________________________________________________________________________________
 
-###Example without class
+### Example without class
 
 ```
 #!/usr/bin/python3
