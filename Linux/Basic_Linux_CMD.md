@@ -53,45 +53,46 @@ cat /etc/login.defs                   --- this is where details are stored
 - Numeric Method
 - Symbolic Method
 
+```
+Read    : r 
+Write   : w 
+Execute : x 
 
-Read	: r
-Write	: w
-Execute 	: x
+User Owner  : u 
+Group Owner : g 
+Others      : o 
+All         : a 
 
-User Owner	: u
-Group Owner	: g
-Others		: o
-All		: a
-
-Assign		: +
-Remove		: -
-Overwrite	: =
-
+Assign    : + 
+Remove    : - 
+Overwrite : = 
+```
 Example :
 ```
 -rw-r--r--. 1 root root 1.8K Apr 19 04:20 initial-setup-ks.cfg
-```
-First 3 		: User owner 
+__________________________________________________________________
+
+First 3 	: User owner 
 Second 3	: Group Owner
-Last 3			: Other
+Last 3		: Other
+```
 
 Give Permission Commands
 ```
 chmod u+rw file/dir
 chmod g-rw file/dir
 chmod o=rw file/dir
-
 ```
 
 ## Numeric Method
 
 - This method will always override default permissions
 ```
-Read	 : 4
-Write	 : 2
-Execute	 : 1
-Full	 : 7
-No	 : 0
+Read    : 4
+Write   : 2
+Execute : 1
+Full    : 7
+No      : 0
 ```
 ```
 chmod 670 file/dir
@@ -112,16 +113,16 @@ chgrp user_name file/dir
 
 
 ## Membership 
-1.Primary
+1. Primary
 ```
 useradd -g grp_name user_name
-```	
+```
 
-2.Secondary
+2. Secondary
+
 ```
 useradd -G grp_name user_name			--- In case of new user
-```
-```
+
 usermod -G grp_name user_name			--- In case of existing user
 ```
 _______________________________________________________________________________________________
@@ -133,7 +134,7 @@ ________________________________________________________________________________
 ```
 setfacl -m u:user_name:rwx file/dir
 ```
-set permission to    specific user(-m) modify
+set permission to specific user (-m) modify
 
 - **Group**
 ```
