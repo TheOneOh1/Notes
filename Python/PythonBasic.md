@@ -3,6 +3,25 @@
 > apt update
 > apt install python3 -y
 ```
+_________________________________________________________________________________________________________________
+
+**Table of Contents**
+
+<!--ts-->
+* [Interpreter](#interpreter)
+* [Python Package Manager](#python-package-manager)
+* [requirements.txt](#requirementstxt)
+* [KeyWords](#keywords)
+* [Debugger](#debugger)
+* [Keys and Values](#keys-and-values)
+* [Importing Libraries in the Script](#importing-libraries-in-the-script)
+* [While Loop](#while-loop)
+* [For Loop](#for-loop)
+* [Functions](#functions)
+* [System Calls](#system-calls)
+* [Sub Process](#sub-process)
+<!--te-->
+_________________________________________________________________________________________________________________
 
 ### Interpreter
 ```
@@ -130,7 +149,8 @@ print(target)
 ```
 _________________________________________________________________________________________________________________
 
-# Keys and Values  [ Data Types - Dictionary ]
+# Keys and Values  
+**[ Data Types - Dictionary ]**
 
 ```
 > d = {"user" : "TheOneOh1", "role" : "Admin"}						--- Storing the key and values in a variable  
