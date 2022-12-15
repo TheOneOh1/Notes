@@ -15,7 +15,7 @@
 	- Cattle, Nomad, Empire
 	- AWS Fargate
 
-![[kubesturct.png]]
+![](https://github.com/TheOneOh1/Notes/blob/main/DevOps/Kubernetes_Cluster.png)
 
 ## Nodes (Minions)
 
