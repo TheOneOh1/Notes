@@ -1,75 +1,78 @@
-KUBERNETES
+# KUBERNETES
 
 - Containers are abstraction over build tool and the Kubernetes is the abstraction over the
-	said containers
+	said containers.
 - Also called as Containers Orchestration
-					\_	> Auto Scaling
-						> Service Discovery
-						> Load Balancer
-						> Self Healing
-						> Zero Downtime Deployment
+	- Auto Scaling
+	- Service Discovery
+	- Load Balancer
+	- Self Healing
+	- Zero Downtime Deployment
 
 - Alternatives to Kubernetes
-	> Docker Swarm
-	> Apache Mesos 
-	> Cattle, Nomad, Empire
-	> AWS Fargate
+	- Docker Swarm
+	- Apache Mesos 
+	- Cattle, Nomad, Empire
+	- AWS Fargate
 
--------------------------------------------------	
--	Kubernetes									-
--		\_ Kubernetes Cluster					-
--				\_ Master Nodes					-
--						\_ Worker Nodes			-
--								\_ Pods			-
--------------------------------------------------			
+![[kubesturct.png]]
 
-Nodes (Minions)
-	- Physical or Virtual machine that Runs the Application
-	- Containers are launched on these machines
-	- Multiple nodes are availble if any failure occurs
+## Nodes (Minions)
 
-Kubernetes Cluster
-	- Set of nodes in one Cluster
-	- if one node fail other will take over, ensures Load Balancing
-	
-Pod
-	- Smallest part of Kubernetes
-	- Pod is inside a Node
-	- Pod is an Object of Kubernetes
-	- It is a Single Instace of an Application
-	- Each pod has a unique IP Address
-	- One Pod cannot have 2 same containers
+- Physical or Virtual machine that Runs the Application
+- Containers are launched on these machines
+- Multiple nodes are availble if any failure occurs
 
-==================================================================================
+## Kubernetes Cluster
 
-Installation KUBERNETES
+- Set of nodes in one Cluster
+- if one node fail other will take over, ensures Load Balancing
 
-Minikube > Local Instace of Kubernetes
-Kubectl	> Commmand line interface for Kubernetes
+## Pod
+
+- Smallest part of Kubernetes
+- Pod is inside a Node
+- Pod is an Object of Kubernetes
+- It is a Single Instace of an Application
+- Each pod has a unique IP Address
+- One Pod cannot have 2 same containers
+
+_______________________________________________________
+
+## Installation KUBERNETES
+
+**Minikube** > Local Instace of Kubernetes
+**Kubectl**	> Commmand line interface for Kubernetes
 
 - Go to https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/
+
 - Install Chocolatey for windows
-	\_ go to https://chocolatey.org/install
-		- Go to Powershell as Admin
-			> Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+	- go to https://chocolatey.org/install
+	- Go to Powershell as Admin
+		> Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 
-			- restart the Powershell
-				> kubectl version --client       [check the version]
+	- restart the Powershell
+		> kubectl version --client       [check the version]
 
 
-- Install Minikube
+## Install Minikube
 
-- go to https://minikube.sigs.k8s.io/docs/start/
+- Go to https://minikube.sigs.k8s.io/docs/start/
 - Download the .exe file and install the minikube
 - Give the installation path in the Environmental Variable
 - Open CMD with Admin
-	> minikube start --driver vmware
-	OR
-	> minikube start
+
+```
+> minikube start --driver vmware
+
+OR
+
+> minikube start
 
 > minikube status
 
-> kubectl get nodes									--- shows info of nodes
+> kubectl get nodes
+[ shows info of nodes ]
 
 > kubectl create deployment hello-node --image=k8s.gcr.io/echoserver:1.4
 [creating a deployment to manage a Pod]
@@ -88,16 +91,20 @@ Kubectl	> Commmand line interface for Kubernetes
 [Views the services you created]
 
 > kubectl delete services hello-node
+
 > kubectl delete deployment hello-node
 [to clean-up the resources in the cluster]
 
-==========================================================================
+```
+____________________________________________________
 
-- [.yaml or .yml] these files are used for Deployments, allows us to define hierarchy 
+- [.yaml or .yml] these files are used for Deployments, allows us to define hierarchy
+
 - Indentation and Case Sensetive
 
 - create a [.yml] file name it as you want and save it with .yml [nginx.yml]
-	\_ 
+
+```
 		apiVersion: apps/v1
 		kind: Deployment
 		metadata:
@@ -125,9 +132,12 @@ Kubectl	> Commmand line interface for Kubernetes
 		                name: nginx
 
 [save and exit and make sure Indentations are Important]
+```
 
-- go to the file path and open CMD 
 
+- Go to the file path and open CMD 
+
+```
 > kubectl apply -f nginx.yml
 
 > kubectl get all 
@@ -138,14 +148,17 @@ Kubectl	> Commmand line interface for Kubernetes
 
 > kubectl delete rs testdeploy-586b7f8654
 [deletes the whole ReplicaSet]
+```
 
-[Even if the replicasset is deleted, Kubernetes will automatically create another with said pods]
+**NOTE :** Even if the replicasset is deleted, Kubernetes will automatically create another with said pods.
 
-==============================================================================================
+________________________________________________________
 
-SERVICES
+## SERVICES
 
 - create a [.yml] file
+
+```
 	\_
 		apiVersion: v1
 		kind: Service
@@ -189,4 +202,5 @@ SERVICES
 - Go to CMD 
 
 > kubectl apply -f frontend-nginx.yml
-> kubectl get services		       
+> kubectl get services
+```
