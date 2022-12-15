@@ -130,8 +130,8 @@ chroot /mnt bash
 ```
 > mount -t overlay
 
-/root/code.py 						--- layer 1
-/bin/python3 /lib/python3/libs 		--- layer 2
+/root/code.py 					--- layer 1
+/bin/python3 /lib/python3/libs 			--- layer 2
 /usr /bin /sbin /root ... 			--- layer 3
 ```
 
