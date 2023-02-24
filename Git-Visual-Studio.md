@@ -1,27 +1,39 @@
-# GitLab with Visual Studio
-
-
 ### 1. Download Git and install just like any other software
 [ https://git-scm.com/downloads ]
 
 - Open Git Terminal and check git version
 
-  `git --version`
+`git --version`
 
 - With the help of following commands configure the git on your system by your account on git
 
-  `git config --global user.name <your-git-username>`
+`git config --global user.name <your-git-username>`
  
-  `git config --global user.email <your-email>`
+`git config --global user.email <your-email>`
+</br>
+</br>
+- **Local configuration (--local):** </br>
+	*This level is specific to the current Git repository and is stored in the repository's .git/config file. Local configuration overrides global and system configurations. You can use local configuration to set project-specific settings that differ from your global or system settings.*
+
+
+- **Global configuration (--global):** </br>
+	*This level is specific to the user and is stored in the user's home directory in the .gitconfig file. Global configuration settings apply to all repositories that the user works on. You can use global configuration to set settings that apply across all of your projects.*
+
+
+- **System configuration (--system):** </br>
+	*This level is specific to the Git installation on the system and is stored in the /etc/gitconfig file. System configuration settings apply to all users on the system and override any global or local configurations.*
+</br>
+</br>
+**NOTE:** When deciding which level of configuration to use, consider the scope of the configuration settings. If the settings are specific to a single project or repository, use local configuration. If the settings apply across all of your projects, use global configuration. If the settings are system-wide and apply to all users on the system, use system configuration.
 
 _________________________________
 ### 2. Configure SSH key pair
 
 - SSH key pairs enable us to log in and set up GitLab with Visual Studio without retyping the username and password for the account. We can then push changes to a remote repo effortlessly.
 
-- go on to terminal
+- go on to terminal on your local machine
 
-  `ssh-keygen -t ed25519 -C "GitLab SSH Pair"`
+`ssh-keygen -t ed25519 -C "GitLab SSH Pair"`
 
 **ed25519**: *Key signature like RSA, EdDSA performs much faster and provides the same level of security with significantly smaller keys.*
 
@@ -50,7 +62,7 @@ _________________________________
 
 - Provide a token name, set desired expiration date and provide required permissions and then click on **Create Personal Access Token**
 
-- Copy the token and save it on your system
+- Copy the token and save it on your system as we will need to configure it with GitLab Workflow Extension
 
 _________________________________
 ### 5. GitLab Workflow Extension on Visual Studio
@@ -87,3 +99,32 @@ ___________________________________________________________________
 - Click on the **"+"** icon to Stage the changes
 - Enter the Commit message and click on Commit
 - Once done Click on Sync Changes which means Push
+
+___________________________________________________________________
+
+## GitLab Actions from Command Pallete
+
+- Pull, Push, Commit these can be performed using the in-built command pallette on Visual Studio Code.
+
+```
+> Open Command Pallette using "ctrl + shift + P"
+
+> Type in the Action you want to take like Pull, Push, Commit
+
+> It will show up the suggestions for you select the appropriate one
+```
+
+
+## Merge Conflicts
+
+- Sometimes it is possible to encounter merge conflicts meaning when different changes are made to the same line of a file.
+- VSCode will inform of such conflicts with a message *"Can't push refs to remote. Try Pull first to integrate your changes"*
+
+**RESOLUTION**
+
+- Open Command Pallette ***"ctrl + shift + P"*** 
+- Enter **Git: pull**
+- In the text editor you will se the conflicting changes, one from your local repo and one from the remote repo.
+- They will be labelled distinctively as "Current Change" and "Incoming Change"
+- In order to resolve this conflict, you can simply choose by clicking either "Accept Current Change" or "Accept Incoming Change" button.
+- Once done you can Commit and Push your work as usual from Command Pallette.
