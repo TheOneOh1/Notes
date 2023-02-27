@@ -128,3 +128,14 @@ ___________________________________________________________________
 - They will be labelled distinctively as "Current Change" and "Incoming Change"
 - In order to resolve this conflict, you can simply choose by clicking either "Accept Current Change" or "Accept Incoming Change" button.
 - Once done you can Commit and Push your work as usual from Command Pallette.
+
+_______________________________________________________
+
+| Command | What does it do? |
+| ------ | ------ |
+| `git checkout master`   | Pulls latest changes made to the master branch   |
+| `git branch -a`   | Lists all available branches   | 
+| `git checkout branch-name`   | Switches from current branch to another   | 
+| `git merge master`   | Merges current branch to master   | 
+| `git -c http.sslVerify=false clone URL`   | Ignores SSL certificate once   | 
+| `git config --global http.sslVerify false`   | Disables SSL altogether    | 
