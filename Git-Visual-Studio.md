@@ -139,3 +139,15 @@ _______________________________________________________
 | `git merge master`   | Merges current branch to master   | 
 | `git -c http.sslVerify=false clone URL`   | Ignores SSL certificate once   | 
 | `git config --global http.sslVerify false`   | Disables SSL altogether    | 
+
+_______________________________________________________
+
+## Moving a personal Project to a Specific Group
+
+- Make sure you have the **Owner** rights for the group
+- Log in to your gitlab instance and go to the Group Home Page
+- Type the name of the member onto the **Search Bar** > **Users** > **Click on the Username**
+- Here you will see that members personal projects, click on the one you would like to move to the main group
+- Then go to **Settings** > **Advanced** > **Transfer Project** > Select the Group you would like this project to be transferred to.
+
+**NOTE:** _If the group has a project with the same name, transfer will not take place._
