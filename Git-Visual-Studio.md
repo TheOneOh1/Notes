@@ -1,3 +1,5 @@
+# Git & Visual Studio Code Integration
+
 ### 1. Download Git and install just like any other software
 [ https://git-scm.com/downloads ]
 
@@ -79,6 +81,7 @@ _________________________________
 
 ___________________________________________________________________
 
+## Git Actions from VS Code
 ### Clone Repo
 
 - Go to Command Palette ***“ctrl + shift + P”***
