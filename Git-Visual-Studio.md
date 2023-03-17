@@ -1,5 +1,17 @@
 # Git & Visual Studio Code Integration
 
+**Table of Contents**
+
+<!--ts-->
+* [Git Setup](https://github.com/TheOneOh1/K8s-Snorty-Splunk/blob/main/k8s.md#k8s-config)
+* [Configure SSH](https://github.com/TheOneOh1/Notes/blob/main/Git-Visual-Studio.md#2-configure-ssh-key-pair)
+* [Generate Personal Access Token](https://github.com/TheOneOh1/Notes/blob/main/Git-Visual-Studio.md#4-generate-personal-access-token)
+* [GitLab Workflow Extension on Visual Studio](https://github.com/TheOneOh1/Notes/blob/main/Git-Visual-Studio.md#5-gitlab-workflow-extension-on-visual-studio)
+* [Git Actions from VS Code](https://github.com/TheOneOh1/Notes/blob/main/Git-Visual-Studio.md#git-actions-from-vs-code)
+* [Moving a personal Project to a Specific Group](https://github.com/TheOneOh1/Notes/blob/main/Git-Visual-Studio.md#moving-a-personal-project-to-a-specific-group)
+<!--te-->
+
+
 ### 1. Download Git and install just like any other software
 [ https://git-scm.com/downloads ]
 
