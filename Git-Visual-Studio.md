@@ -154,3 +154,14 @@ _______________________________________________________
 - Then go to **Settings** > **Advanced** > **Transfer Project** > Select the Group you would like this project to be transferred to.
 
 **NOTE:** _If the group has a project with the same name, transfer will not take place._
+
+_____________________________________________________
+
+## Merge requests - What is a Merge Request?
+
+- Merge Requests are a good way to visualize new changes that are about to be made in the master branch.
+- Instead of making changes directly into master, the Merge Request workflow allows you to:
+
+	- allow others to review the changes
+	- allows the pipeline to run once without affecting others or the master branch
+	- allows for additional changes to be made
