@@ -3,7 +3,7 @@
 **Table of Contents**
 
 <!--ts-->
-* [Git Setup](https://github.com/TheOneOh1/K8s-Snorty-Splunk/blob/main/k8s.md#k8s-config)
+* [Git Setup](https://github.com/TheOneOh1/Notes/blob/main/Git-Visual-Studio.md#1-download-git-and-install-just-like-any-other-software)
 * [Configure SSH](https://github.com/TheOneOh1/Notes/blob/main/Git-Visual-Studio.md#2-configure-ssh-key-pair)
 * [Generate Personal Access Token](https://github.com/TheOneOh1/Notes/blob/main/Git-Visual-Studio.md#4-generate-personal-access-token)
 * [GitLab Workflow Extension on Visual Studio](https://github.com/TheOneOh1/Notes/blob/main/Git-Visual-Studio.md#5-gitlab-workflow-extension-on-visual-studio)
