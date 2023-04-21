@@ -14,6 +14,12 @@
 [Authentication will be reqiuired for the key copy]
 [Once done you will be able to login from runner to remote server without a password prompt]
 
+[ Copy the Private key and Save it in Project varibales ]
+Setting > CI/CD > Variables
+
+Key: SSH_PRIVATE_KEY
+Value: <copied-private-key>
+
 ```
 
 # Runner Configuration
