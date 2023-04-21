@@ -24,6 +24,9 @@ Value: <copied-private-key>
 
 # Runner Configuration
 
+- Make sure the runner has the environment setup on it to run the desired project.
+- Check compatible Java, Gradle, Tomcat etc. versions as per requirement. 
+
 ```
 [ Download the binary for your system ]
 > sudo curl -L --output /usr/local/bin/gitlab-runner https://gitlab-runner-downloads.s3.amazonaws.com/latest/binaries/gitlab-runner-linux-amd64
